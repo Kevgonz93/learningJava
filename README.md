@@ -1,4 +1,4 @@
-# 🚀 Java Piscina & Projects Portfolio
+# 🚀 Java Learning Projects Portfolio
 
 Este repositorio contiene material utilizado y desarrollado durante mi aprendizaje de **Java 21**.
 
@@ -17,16 +17,17 @@ El repositorio está organizado en módulos independientes para cada proyecto:
 │
 ├── 📂 d00_LibftJava/          # Proyecto 00 (¡Completado! 🎉)
 │   ├── README.md              # Detalle de algoritmos y listas manuales
+│   ├── d00_LibftJava.md       # Instrucciones para la realización del proyecto 
 │   ├── LibftJava.java         # Suite de pruebas principal
 │   └── 📂 d00_LibftJava/          # Clases FtStrings, FtArrays, FtLists...
 │
-├── 📂 d01_ProjectOne/         # Proyecto 01 (Próximamente ⏳)
+├── 📂 d01_ProjectOne/         # Proyecto 01 ( ⏳)
 │   └── ...
 │
-├── 📂 d02_ProjectTwo/         # Proyecto 02 (Próximamente ⏳)
+├── 📂 d02_ProjectTwo/         # Proyecto 02 ( ⏳)
 │   └── ...
 │
-└── 📂 d03_ProjectThree/       # Proyecto 03 (Próximamente ⏳)
+└── 📂 d03_ProjectThree/       # Proyecto 03 ( ⏳)
     └── ...
 ```
 

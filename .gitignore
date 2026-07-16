@@ -1,0 +1,13 @@
+# Archivos de compilación de Java
+*.class
+*.jar
+*.war
+
+# Carpetas del sistema y del IDE
+.DS_Store
+.idea/
+.vscode/
+*.iml
+bin/
+out/
+target/

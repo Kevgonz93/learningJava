@@ -1,30 +1,62 @@
-# LibftJava ☕
+# 🚀 Java Piscina & Projects Portfolio
 
-Mi primera biblioteca de utilidades en **Java**, inspirada en el clásico proyecto `libft` de la escuela 42. Este proyecto marca mi transición de la programación imperativa y de bajo nivel en **C** hacia la Programación Orientada a Objetos (POO) y la robustez de **Java**.
+Este repositorio contiene material utilizado y desarrollado durante mi aprendizaje de **Java 21**.
 
-## 📌 Contenido del Proyecto
+A través de **4 proyectos**, exploro desde la recreación de algoritmos clásicos y gestión de memoria manual, hasta conceptos avanzados de programación orientada a objetos (POO), colecciones nativas, concurrenencia y arquitectura de software.
 
-El proyecto está dividido en tres áreas clave de aprendizaje:
+---
 
-### 1. Manipulación de Strings (`FtStrings`)
-Desarrollo de lógica carácter a carácter sin librerías externas:
-* `ft_strlen`, `ft_split`, `ft_strjoin`, `ft_stoi` y `ft_itos`.
+## 📁 Estructura del Repositorio
 
-### 2. Algoritmia y Arrays (`FtArrays`)
-* `ft_sort_int` (Ordenación manual Bubble/Insertion).
-* `ft_search_int` (Búsqueda binaria eficiente).
+El repositorio está organizado en módulos independientes para cada proyecto:
 
-### 3. Gestión de Memoria y Listas (`FtLinkedList` y `FtLists`)
-* **Bajo Nivel:** Implementación de nuestra propia estructura de nodos (`nodeLists`) recreando los punteros de C (`ft_lstnew`, `ft_lstadd_back`, `ft_lstsize`, `ft_lstclear`).
-* **Alto Nivel:** Dominio de la API nativa de Java (`ArrayList`, `Iterator`) y funciones de conversión (`ft_list_push_back`, `ft_list_remove_if`, `ft_list_to_array`).
-
-## 🛠️ Compilación y Ejecución
-
-Todo el proyecto está desarrollado en Java puro, sin dependencias externas.
-
-Para compilar desde la terminal:
-```bash
-javac d00_Libft/*.java LibftJava.java
-java LibftJava
+```text
+.
+├── .gitignore
+├── README.md                  # Este archivo (Guía general del portfolio)
+│
+├── 📂 d00_LibftJava/          # Proyecto 00 (¡Completado! 🎉)
+│   ├── README.md              # Detalle de algoritmos y listas manuales
+│   ├── LibftJava.java         # Suite de pruebas principal
+│   └── 📂 d00_LibftJava/          # Clases FtStrings, FtArrays, FtLists...
+│
+├── 📂 d01_ProjectOne/         # Proyecto 01 (Próximamente ⏳)
+│   └── ...
+│
+├── 📂 d02_ProjectTwo/         # Proyecto 02 (Próximamente ⏳)
+│   └── ...
+│
+└── 📂 d03_ProjectThree/       # Proyecto 03 (Próximamente ⏳)
+    └── ...
 ```
 
+## 🗺️ Hoja de Ruta de Aprendizaje
+
+### 🏁 Proyecto 00: LibftJava | Completado
+
+-	Foco: Fundamentos del lenguaje, JVM, robustez y gestión de memoria.
+-	Retos superados:
+-	Parseo de strings carácter a carácter sin utilizar librerías nativas avanzadas de Java.
+-	Implementación manual de algoritmos de ordenación y búsqueda binaria.
+-	Recreación del concepto de punteros de C mediante nuestra propia estructura de nodos enlazados en Java (nodeLists).
+-	Dominio del manejo de excepciones, la API List/ArrayList de Java y el uso seguro de Iterator.
+### 🔹 Proyecto 01: [Nombre del Proyecto 1] | Próximamente
+-   Foco sugerido: Profundización en Programación Orientada a Objetos (POO).
+-	Conceptos clave: Clases, encapsulamiento, herencia, polimorfismo e interfaces.
+### 🔹 Proyecto 02: [Nombre del Proyecto 2] | Próximamente
+-   Foco sugerido: Entrada/Salida de datos y Colecciones complejas.
+  - Conceptos clave: Lectura y escritura de archivos, manejo de mapas (HashMap), sets y flujos de datos (Streams).
+### 🔹 Proyecto 03: [Nombre del Proyecto 3] | Próximamente
+  -	Foco sugerido: Concurrencia o Interfaces Gráficas / APIs.
+  -	Conceptos clave: Multihilo (Threads), programación asíncrona o desarrollo de una aplicación cliente-servidor robusta.
+
+## 🧠 Del "Manual de C" a la "Robustez de Java"
+  Durante este viaje, el principal valor añadido ha sido el cambio de mentalidad al programar:
+  -	Gestión de Memoria: Pasar del control absoluto de cada byte con malloc y free en C, a comprender la magia y optimización del Garbage Collector de la JVM.
+  -	Seguridad Tipada: Diseñar código defendible que aproveche el fuerte tipado de Java y la captura inteligente de anomalías mediante bloques try-catch para evitar fallos catastróficos en tiempo de ejecución.
+  -	Modularidad: Estructurar el código en clases con responsabilidades únicas bien definidas, sentando las bases de un software escalable y mantenible.
+## 🛠️ Requisitos de Ejecución
+  -	Entorno: Java Development Kit (JDK) 21 o superior.
+  -	Herramientas: Compilador nativo javac y Máquina Virtual java.
+       
+ _<sub> Para instrucciones específicas de compilación y ejecución de cada entrega, consulta el README.md dentro de la carpeta de cada proyecto.</sub>_

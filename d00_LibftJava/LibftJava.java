@@ -1,4 +1,6 @@
-package d00_Libft;
+package d00_LibftJava;
+import d00_Libft.*;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.ArrayList;
@@ -230,8 +232,7 @@ public class LibftJava {
         System.out.println("\n\t--------------------o--------------------");
     }
 
-    public static void testing_FtLists()
-    {
+    public static void testing_FtLists(){
         System.out.println("TESTING FTLISTS CLASS");
 
         List<Integer> list = new ArrayList<>();
@@ -276,8 +277,7 @@ public class LibftJava {
         System.out.println("\n\t--------------------o--------------------\n");
     }
 
-    public static void testing_FtLinkedLists()
-    {
+    public static void testing_FtLinkedLists(){
         System.out.println("TESTING FTLINKEDLISTS CLASS");
 
         Random random = new Random();
@@ -300,7 +300,7 @@ public class LibftJava {
         System.out.println("\n>>>\t\t\tFT_LSTNEW\n");
 
         i = 0;
-        nodeLists   node1 = new nodeLists(numbers[i++]);
+        nodeLists node1 = new nodeLists(numbers[i++]);
 
         System.out.println("testing ft_lstnew with: " + numbers[0]);
         System.out.println("\nnode1.content = " + node1.content);

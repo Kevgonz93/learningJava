@@ -1,0 +1,45 @@
+package d01_Shoppy.product;
+
+public abstract class Product implements Discount{
+    private int id;
+    private String name;
+    private double priceInit;
+
+    public Product (int id, String name, double priceInit)
+    {
+        this.id = id;
+        this.name = name;
+        this.priceInit = priceInit;
+    }
+
+    public abstract double getFinalPrice();
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int newId){
+        this.id = newId;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String newName){
+        this.name = newName;
+    }
+
+    public double getPriceInit(){
+        return priceInit;
+    }
+
+    public void setPriceInit(double newPriceInit){
+        this.priceInit = newPriceInit;
+    }
+
+    @Override
+    public void makeDiscount(double percentage){
+        double result = this.getPriceInit() * ((100.00 - percentage)/100);
+        this.setPriceInit(result);}
+}

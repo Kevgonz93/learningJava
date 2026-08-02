@@ -5,8 +5,8 @@ import d01_Shoppy.product.enums.CostDelivery;
 public class PhysicalProduct extends Product {
     private double weight;
 
-    public PhysicalProduct (int id, String name, double priceInit, double weight){
-        super(id, name, priceInit);
+    public PhysicalProduct (int id, String name, double priceInit, double weight, int quantity){
+        super(id, name, priceInit, quantity);
         this.weight = weight;
     }
 

@@ -30,6 +30,7 @@ public class Main{
                 System.out.println("Welcome, " + loggedCustomer.getFirstName() + "!");
             }
         }
+
         System.out.println("Login successful! Lets go!");
         scanner.close();
     }

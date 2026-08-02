@@ -6,8 +6,8 @@ public class DigitalProduct extends Product implements Discount {
     private double sizeMB;
     private TypeLicence typeLicence;
 
-    public DigitalProduct (int id, String name, double priceInit, double sizeMB, TypeLicence typeLicence){
-        super(id, name, priceInit);
+    public DigitalProduct (int id, String name, double priceInit, double sizeMB, TypeLicence typeLicence, int quantity){
+        super(id, name, priceInit, quantity);
         this.sizeMB = sizeMB;
         this.typeLicence = typeLicence;
     }

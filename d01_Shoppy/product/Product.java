@@ -1,5 +1,9 @@
 package d01_Shoppy.product;
 
+import d01_Shoppy.customer.Customer;
+
+import java.util.Scanner;
+
 public abstract class Product implements Discount{
     private int id;
     private String name;

@@ -1,13 +1,11 @@
 package d01_Shoppy.login;
 
 import d01_Shoppy.customer.Customer;
-import d01_Shoppy.customer.CustomersData;
+import d01_Shoppy.customer.customersData.CustomersData;
 
 import java.util.Scanner;
 
 import static java.lang.Thread.sleep;
-import static d01_Shoppy.customer.Customer.*;
-import static d01_Shoppy.customer.CustomersData.*;
 
 public class LoginService {
     public static LoginResult loginProcess(String input, CustomersData allCustomers, Scanner scanner){

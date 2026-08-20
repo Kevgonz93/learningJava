@@ -2,21 +2,14 @@ package d01_Shoppy;
 
 import d01_Shoppy.login.*;
 import static d01_Shoppy.login.LoginService.*;
-import static d01_Shoppy.login.LoginResult.*;
+
 import d01_Shoppy.customer.Customer;
-import d01_Shoppy.customer.CustomersData;
-import d01_Shoppy.product.*;
-import d01_Shoppy.product.productsData.*;
+import d01_Shoppy.customer.customersData.CustomersData;
 import d01_Shoppy.product.productsData.ProductsData;
 
 import java.util.Scanner;
 
 public class Main{
-
-    public static boolean editProfile(Scanner scanner, Customer loggedCustomer){
-        return true;
-    }
-
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         ProductsData productsData = new ProductsData();
@@ -45,6 +38,7 @@ public class Main{
             System.out.println("\t1.\tBuy a product.");
             System.out.println("\t2.\tEdit my profile");
             System.out.println("\t3.\tExit");
+            System.out.flush();
             System.out.print("> ");
             String input = scanner.nextLine().trim();
             int option;

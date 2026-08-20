@@ -1,4 +1,7 @@
-package d01_Shoppy.customer;
+package d01_Shoppy.customer.customersData;
+
+import d01_Shoppy.customer.Customer;
+import d01_Shoppy.customer.enums.Subscription;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +30,34 @@ public class CustomersData {
         return null;
     }
 
+    public Customer editSubscription(Scanner scanner, Customer oldCustomer, Subscription newSubscription){
+        oldCustomer.setSubscription(newSubscription);
+        return oldCustomer;
+    }
+
+    public Customer editCustomer(Scanner scanner, Customer oldCustomer){
+        System.out.println("\n===== EDIT CUSTOMERS PROFILE =====");
+        System.out.println("Enter your new name. If you don't want to change it, just press enter.");
+        System.out.print("> ");
+        String name = scanner.nextLine().trim();
+        if (!name.isEmpty())
+            oldCustomer.setFirstName(name);
+
+        System.out.print("Enter your lastname.  If you don't want to change it, just press enter.");
+        System.out.print("> ");
+        String lastName = scanner.nextLine().trim();
+        if (!lastName.isEmpty())
+            oldCustomer.setLastName(lastName);
+
+        System.out.println("Enter your email. If you don't want to change it, just press enter.");
+        System.out.print("> ");
+        String email = scanner.nextLine().trim();
+        if (!email.isEmpty())
+            oldCustomer.setEmail(email);
+
+        return oldCustomer;
+    }
+
     public Customer addCustomer(Scanner scanner){
         System.out.println("\n===== NEW CUSTOMER REGISTRATION =====");
         System.out.print("Enter your name: ");
@@ -46,5 +77,10 @@ public class CustomersData {
     }
 
     public List<Customer> getAllCustomers(){return customersList;
+    }
+
+    public Customer deleteCustomer(Scanner scanner, Customer deletedCustomer){
+        deletedCustomer.setSubscription(null);
+        return deletedCustomer;
     }
 }

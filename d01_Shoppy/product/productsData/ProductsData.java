@@ -48,7 +48,8 @@ public class ProductsData {
     }
 
     public  boolean makingABuy(Scanner scanner, Customer loggedCustomer){
-        System.out.println("Hi, " + loggedCustomer.getFirstName() + ". Now you will see our catalog.");
+        System.out.println("\n===== BUY SECTION =====\n");
+        System.out.println("Hi, " + loggedCustomer.getFirstName() + ". Now you will see our catalog.\n");
         printCatalog(scanner, getStock());
         return true;
     }
